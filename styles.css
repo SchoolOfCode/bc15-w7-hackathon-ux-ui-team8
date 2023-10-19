@@ -245,6 +245,28 @@ width: 50%;
   width: 350px;
 }
 
+/*Social Links*/
+
+.socials{
+  margin: 8px;
+}
+
+.socials__container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  margin-inline: 16px;
+  
+}
+
+.social a{
+text-decoration: none;
+}
+
+.social img{
+  margin-left: 8px;
+  }
+
 /*Footer styles*/
 
 h1 {
