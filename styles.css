@@ -1,6 +1,12 @@
 /* Custom CSS variables */
 
 :root {
+  --clr-nav: #ffd230;
+  --clr-text: #000000;
+  --clr-white: #ffffff;
+  --clr-text-clicked: #606060;
+  --clr-sport-link: #387b12;
+
   /* sport logo - 34px
 body text - 18px
 
@@ -86,4 +92,6 @@ h6 {
 h1 {
   font-family: "BBCReithSansBld", sans-serif;
   font-size: 34px;
+  margin-left: 6px;
+  color: var(--clr-text);
 }
