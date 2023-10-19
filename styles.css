@@ -6,36 +6,22 @@
   --clr-white: #ffffff;
   --clr-text-clicked: #606060;
   --clr-sport-link: #387b12;
+  --clr-live: #006566;
 
-  /* sport logo - 34px
-body text - 18px
-
-line heights - 34px
-
-font-weights - 400, 700 */
-
-  /* Our color palette is
-#FFD22F - Yellow
-#387B12 - Green
-#606060 - Grey
-#000000 - Black */
 }
 
 /* Custom Fonts */
 
+
 @font-face {
-  font-family: "BBCReithSansRg", sans-serif;
-  src: url(./fonts/BBCReithSerif_A_Rg.ttf) format("truetype");
+	font-family: bbc-font;
+	src: url(./fonts/WOFF/BBCReithSans_W_Rg.woff);
 }
 
 @font-face {
-  font-family: "BBCReithSemiBld", sans-serif;
-  src: url(./fonts/App/BBCReithSans_A_Md.ttf) format("truetype");
-}
-
-@font-face {
-  font-family: "BBCReithSansBld", sans-serif;
-  src: url(./fonts/App/BBCReithSans_A_Bd.ttf) format("truetype");
+	font-family: bbc-font;
+	src: url(./fonts/WOFF/BBCReithSans_W_Bd.woff);
+	font-weight: bold;
 }
 
 /* Custom css reset */
@@ -88,8 +74,10 @@ h6 {
 
 /*Global styles*/
 body {
+
   margin-block: -20px;
-  font-family: "BBCReithSansRg", sans-serif;
+  font-family: bbc-font;
+
 }
 
 main {
@@ -103,7 +91,7 @@ a {
 
 h3 {
   font-size: 1.125rem;
-  font-family: "BBCReithSemiBld", sans-serif;
+  font-family: bbc-font;
 }
 
 .grey {
@@ -111,7 +99,7 @@ h3 {
 }
 
 .green {
-  color: var(--clr-sport-link)
+  color: var(--clr-live)
 }
 /*Header styles */
 
@@ -182,7 +170,7 @@ header {
   padding: 5px 5px;
   text-decoration: none;
   color: var(--clr-text);
-  border: solid 0.5px rgb(126, 126, 126);
+  border: solid 1px rgba(0, 0, 0, 0.055);
   box-shadow: 0 0 1px;
 }
 
@@ -191,7 +179,7 @@ header {
 }
 
 h1 {
-  font-family: "BBCReithSansBld", sans-serif;
+  font-family: bbc-font;
   font-size: 36px;
   margin-left: 6px;
   color: var(--clr-text);
@@ -262,23 +250,39 @@ h1 {
   margin: 8px;
 }
 
+.socials h2 {
+  font-size: 1.25rem;
+}
+
 .socials__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
-  margin-inline-start: 0.5rem;
-  margin-inline-end: 1rem;
+  gap: 1.5rem;
+  margin-inline-start: 0.25rem;
+  margin-inline-end: 1.5rem;
   margin-block-start: 1.5rem;
-  margin-block-end: 2rem;
+  margin-block-end: 1.5rem;
 }
 
 .social a {
   text-decoration: none;
 }
 
+.social > a > div {
+  width: 100%;
+}
+
 .social img {
-  margin-inline-start: 0.5rem;
+
   margin-block-end: 0.5rem;
+  margin-inline-start: 0.25rem;
+  width: 100%;
+  object-fit: cover;
+  height: 110px;
+}
+
+.social h3 {
+  font-size: 1rem;
 }
 
 .socials__footer p {
@@ -334,14 +338,15 @@ h1 {
 position:absolute;
 fill:var(--clr-white);
 background: var(--clr-text-clicked);
-bottom:0;
-left:0;
+/* bottom:0;
+left:0; */
 z-index: 999;
 }
 
 .iplayer__card__image {
   height: 100%;
   width: 100%;
+
 }
 
 .iplayer__card__textContainer {
@@ -365,4 +370,3 @@ z-index: 999;
 .
 
 /*Footer styles*/
-
