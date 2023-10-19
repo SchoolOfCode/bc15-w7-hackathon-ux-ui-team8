@@ -1,0 +1,89 @@
+/* Custom CSS variables */
+
+:root {
+  /* sport logo - 34px
+body text - 18px
+
+line heights - 34px
+
+font-weights - 400, 700 */
+
+  /* Our color palette is
+#FFD22F - Yellow
+#387B12 - Green
+#606060 - Grey
+#000000 - Black */
+}
+
+/* Custom Fonts */
+
+@font-face {
+  font-family: "BBCReithSansRg", sans-serif;
+  src: url(./fonts/BBCReithSerif_A_Rg.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "BBCReithSansBld", sans-serif;
+  src: url(./fonts/App/BBCReithSans_A_Bd.ttf) format("truetype");
+}
+
+/* Custom css reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/*Global styles*/
+
+/*Header styles */
+
+/*Main news styles*/
+
+/*Footer styles*/
+
+h1 {
+  font-family: "BBCReithSansBld", sans-serif;
+  font-size: 34px;
+}
