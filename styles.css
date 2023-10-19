@@ -296,6 +296,11 @@ h1 {
   background-color: var(--clr-text);
 }
 
+.iplayer__heading{
+  color: var(--clr-white);
+  padding-block: 1rem;
+  padding-inline: 0.5rem;
+}
 .iplayer__container {
   display: grid;
   gap: 0.5rem;
@@ -317,7 +322,17 @@ h1 {
 }
 
 .iplayer__imageContainer {
+  position: relative;
   width: 50%;
+}
+
+.play__icon{
+position:absolute;
+fill:var(--clr-white);
+background: var(--clr-text-clicked);
+bottom:0;
+left:0;
+z-index: 999;
 }
 
 .iplayer__card__image {
@@ -326,6 +341,9 @@ h1 {
 }
 
 .iplayer__card__textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 100%;
   padding: 0.5rem;
 }
@@ -339,4 +357,8 @@ h1 {
   align-items: center;
   gap: 0.25rem;
 }
+
+.
+
 /*Footer styles*/
+
