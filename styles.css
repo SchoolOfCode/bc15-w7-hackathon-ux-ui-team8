@@ -109,6 +109,10 @@ h3 {
 .grey {
   color: var(--clr-text-clicked);
 }
+
+.green {
+  color: var(--clr-sport-link)
+}
 /*Header styles */
 
 header {
