@@ -82,73 +82,133 @@ h6 {
 }
 
 /*Global styles*/
-body{
+body {
   margin-block: -20px;
   font-family: "BBCReithSansRg", sans-serif;
 }
 
+main {
+  margin-inline: 8px;
+  margin-block: 16px;
+}
+
+a {
+  color: var(--clr-text);
+}
+
 /*Header styles */
 
-header{
-  
+header {
 }
 /* Main Navigation styles*/
 
-.nav__main{
-  display:flex;
+.nav__main {
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 0.25rem;
+  padding: 0.125rem 0.25rem;
   margin-inline: 16px;
 }
 
-.nav__main__list{
+.nav__main__list {
   display: flex;
   list-style: none;
   padding-left: 0;
-  gap: 8px;
+  gap: 1.5rem;
 }
 
-.nav__icon{
-  width: 2.2rem;
+.nav__icon {
+  width: 1.8rem;
 }
 
-.main__logo{
-  width: 112px;
+.hamburger {
+  margin-top: 5px;
+  width: 1.4rem;
+}
+
+.main__logo {
+  width: 100px;
 }
 
 /*Sport navigation styles */
 
-.nav__sport{
-  display:flex;
+.nav__sport {
+  display: flex;
   align-items: center;
   justify-content: space-between;
   margin-top: -20px;
   /* padding-block: 2px; */
-  background-color:var(--clr-nav);
+  background-color: var(--clr-nav);
 }
 
-.nav__icon2{
-width: 1.2rem;
+.nav__icon2 {
+  width: 1.2rem;
 }
 
-.nav__sport__menu{
-  display:flex;
+.nav__sport__menu {
+  display: flex;
   align-items: center;
   gap: 0.5rem;
   margin-inline-end: 8px;
   padding: 8px 5px;
   text-decoration: none;
-  color:var(--clr-text);
+  color: var(--clr-text);
   border: solid 0.5px rgb(126, 126, 126);
   box-shadow: 0 0 1px;
 }
 
-.nav__sport__menu p{
+.nav__sport__menu p {
   font-size: 1rem;
 }
 
 /*Main news styles*/
+
+.news__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.news__card {
+  display: flex;
+  grid-column: span 2;
+}
+
+.news__card:nth-child(1) {
+  flex-direction: column;
+}
+
+.news__card:nth-child(2) {
+  grid-column: span 1;
+  flex-direction: column;
+}
+
+.news__card:nth-child(3) {
+  grid-column: span 1;
+  flex-direction: column;
+}
+
+.news__card:last-child {
+  flex-direction: column;
+}
+
+.news__card__image {
+  width: 100%;
+}
+
+.news__card__headline {
+  text-decoration: none;
+}
+
+.news__card__sport {
+  text-decoration: none;
+  color: var(--clr-sport-link);
+  display: block;
+}
+
+.feed__list__images {
+  width: 350px;
+}
 
 /*Footer styles*/
 
