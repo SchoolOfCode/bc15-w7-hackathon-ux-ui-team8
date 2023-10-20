@@ -9,7 +9,10 @@
   <body>
     <header>
       <!--Main navigation-->
-      <nav class="nav__main">
+      <nav class="nav__main mobile__nav__toggle"
+      type="button"
+      aria-controls="primary_navigation"
+      aria-expanded="false">
         <ul class="nav__main__list">
           <li class="nav__main__listItem">
             <a href="#"
@@ -17,7 +20,7 @@
                 class="nav__icon user"
                 src="./assets/account.png"
                 alt="user logo"
-              />
+              >
             </a>
           </li>
           <li class="nav__main__listItem">
@@ -26,7 +29,7 @@
                 class="nav__icon bell"
                 src="./assets/notifications.png"
                 alt="notification logo"
-              />
+              >
             </a>
           </li>
         </ul>
@@ -51,7 +54,7 @@
                 class="nav__icon hamburger"
                 src="./assets/bbchamurger.png"
                 alt="navigation menu icon"
-              />
+              >
             </a>
           </li>
           <li class="nav__main__listItem">
@@ -60,8 +63,59 @@
                 class="nav__icon search"
                 src="./assets/search.png"
                 alt="search icon"
-              />
+              >
             </a>
+          </li>
+        </ul>
+        <ul class="main__nav__links" data-visible="false" id="primary_navigation">
+          <li>
+            <a class="main__nav__link" href="#">Home</a
+            >
+          </li>
+          <li>
+            <a class="main__nav__link" href="#"
+              >News</a
+            >
+          </li>
+          <li>
+            <a class="main__nav__link" href="#"
+              >Sport</a
+            >
+          </li>
+          <li>
+            <a class="main__nav__link" href="#"
+              >Weather</a
+            >
+          </li>
+          <li>
+            <a class="main__nav__link" href="#"
+              >iPlayer</a
+            >
+          </li>
+          <li>
+            <a class="main__nav__link" href="#"
+              >Sounds</a
+            >
+          </li>
+          <li>
+            <a class="main__nav__link" href="#"
+              >Bitesize</a
+            >
+          </li>
+          <li>
+            <a class="main__nav__link" href="#"
+              >CBBC</a
+            >
+          </li>
+          <li>
+            <a class="main__nav__link" href="#"
+              >CBeebies</a
+            >
+          </li>
+          <li>
+            <a class="main__nav__link" href="#"
+              >Food</a
+            >
           </li>
         </ul>
       </nav>
@@ -78,12 +132,12 @@
               class="nav__icon2"
               src="./assets/bbchamburger.png"
               alt="sport navigation menu icon"
-            />
+            >
             <p>Menu</p></a
           >
         </div>
         <ul class="nav__links" data-visible="false" id="primary_navigation">
-          <li>
+          <li class="yellow">
             <a class="nav__link" href="#">Home</a
             >
           </li>
@@ -132,7 +186,46 @@
               >Althetics</a
             >
           </li>
-
+          <li>
+            <a class="nav__link" href="#"
+              >Archery</a
+            >
+          </li>
+          <li>
+            <a class="nav__link" href="#"
+              >Climbing</a
+            >
+          </li>
+          <li>
+            <a class="nav__link" href="#"
+              >Swimming</a
+            >
+          </li>
+          <li>
+            <a class="nav__link" href="#"
+              >Cycling</a
+            >
+          </li>
+          <li>
+            <a class="nav__link" href="#"
+              >Ping Pong</a
+            >
+          </li>
+          <li>
+            <a class="nav__link" href="#"
+              >Gymnastics</a
+            >
+          </li>
+          <li>
+            <a class="nav__link" href="#"
+              >Fencing</a
+            >
+          </li>
+          <li>
+            <a class="nav__link" href="#"
+              >Wine Tasting</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
@@ -145,7 +238,7 @@
               ><img
                 class="news__card__image"
                 src="./assets/newsImages/headingImg.png"
-            /></a>
+            ></a>
           </div>
           <div class="news__headline__textContainer">
             <a href="#" class="news__card__headline">
@@ -189,7 +282,7 @@
               ><img
                 class="news__card__image"
                 src="./assets/newsImages/storyOneImg.png"
-            /></a>
+            ></a>
           </div>
           <div class="news__subheading__textContainer">
             <a href="#" class="news__card__headline">
@@ -227,7 +320,7 @@
               ><img
                 class="news__card__image"
                 src="./assets/newsImages/storyTwoImg.png"
-            /></a>
+            ></a>
           </div>
           <div class="news__card__textContainer">
             <a href="#" class="news__card__headline">
@@ -242,7 +335,7 @@
               ><img
                 class="news__card__image"
                 src="./assets/newsImages/storyThreeImg.png"
-            /></a>
+          ></a>
           </div>
           <div class="news__card__textContainer">
             <a href="#" class="news__card__headline">
@@ -259,7 +352,7 @@
               ><img
                 class="news__card__image"
                 src="./assets/newsImages/storyFourImg.png"
-            /></a>
+            ></a>
           </div>
           <div class="news__card__textContainer">
             <a href="#" class="news__card__headline">
@@ -278,7 +371,7 @@
               ><img
                 class="news__card__image"
                 src="./assets/newsImages/storyFiveImg.png"
-            /></a>
+            ></a>
           </div>
           <div class="news__card__textContainer">
             <a href="#" class="news__card__headline"
@@ -296,7 +389,7 @@
                 class="news__card__image"
                 src="./assets/newsImages/storySixImg.png"
                 alt="photo"
-            /></a>
+            ></a>
           </div>
           <div class="news__card__textContainer">
             <a href="#" class="news__card__headline">
@@ -313,7 +406,7 @@
               ><img
                 class="news__card__image"
                 src="./assets/newsImages/storySevenImg.png"
-            /></a>
+            ></a>
           </div>
           <div class="news__card__textContainer">
             <a href="#" class="news__card__headline"
@@ -330,7 +423,7 @@
               ><img
                 class="news__card__image"
                 src="./assets/newsImages/storyEightImg.png"
-            /></a>
+            ></a>
           </div>
           <div class="news__card__textContainer">
             <a href="#" class="news__card__headline"
@@ -347,7 +440,7 @@
               ><img
                 class="news__card__image"
                 src="./assets/newsImages/storyNineImg.png"
-            /></a>
+            ></a>
           </div>
           <div class="news__headline__textContainer">
             <a href="#" class="news__card__headline">
@@ -375,7 +468,7 @@
               <img
                 src="https://ichef.bbci.co.uk/ace/standard/320/cpsprodpb/A37B/production/_123215814_twitter.png"
                 alt="twitter logo"
-              />
+              >
             </div>
             <h3>Twitter</h3>
           </a>
@@ -386,7 +479,7 @@
               <img
                 src="https://ichef.bbci.co.uk/ace/standard/320/cpsprodpb/E255/production/_123214975_facebook.png"
                 alt="facebook logo"
-              />
+              >
             </div>
             <h3>Facebook</h3>
           </a>
@@ -397,7 +490,7 @@
               <img
                 src="https://ichef.bbci.co.uk/ace/standard/320/cpsprodpb/15785/production/_123214978_insta.png"
                 alt="instagram logo"
-              />
+              >
             </div>
             <h3>Instagram</h3>
           </a>
@@ -408,7 +501,7 @@
               <img
                 src="https://ichef.bbci.co.uk/ace/standard/320/cpsprodpb/6D25/production/_123214972_youtube.png"
                 alt="youtube logo"
-              />
+              >
             </div>
             <h3>YouTube</h3>
           </a>
@@ -439,7 +532,7 @@
                 height="135"
                 loading="lazy"
                 class="iplayer__card__image"
-            />
+            >
             <svg
             viewBox="0 0 32 32"
             width="1em"
@@ -451,7 +544,6 @@
             <path class="play__icon__bg" d="M29 16 5.8 1v30L29 16z"></path>
           </svg>
           </a>
-           
           </div>
           <div class="iplayer__card__textContainer">
             <a href="#" class="iplayer__card__headline">
@@ -503,7 +595,7 @@
                 height="135"
                 loading="lazy"
                 class="iplayer__card__image"
-            />
+            >
             <svg
             viewBox="0 0 32 32"
             width="1em"
@@ -567,7 +659,7 @@
                 height="135"
                 loading="lazy"
                 class="iplayer__card__image"
-            />
+            >
             <svg
               viewBox="0 0 32 32"
               width="1em"
@@ -631,7 +723,7 @@
                 height="135"
                 loading="lazy"
                 class="iplayer__card__image"
-            />
+            >
             <svg
             viewBox="0 0 32 32"
             width="1em"
