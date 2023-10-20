@@ -341,6 +341,7 @@ h1 {
 .iplayer {
   width: 100%;
   background-color: var(--clr-text);
+  padding-block-end: 1.5rem;
 }
 
 .iplayer__heading{
@@ -406,6 +407,33 @@ z-index: 999;
   gap: 0.25rem;
 }
 
-.
-
 /*Footer styles*/
+
+footer{
+  background-color: #141414;
+}
+
+.nav__footer__links{
+  border-block: 1px solid var(--clr-text-clicked);
+  padding-block: 1.5rem;
+}
+
+.footer__links__list{
+display: grid;
+grid-auto-flow: column;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: repeat(5, 1fr);
+list-style: none;
+row-gap: 1rem;
+column-gap: 1rem;
+background-color: var(--clr-text-clicked);
+
+}
+
+.bbc__links{
+  text-decoration: none;
+  color: var(--clr-white);
+  background-color: #141414;
+  border-right: 1px solid var(--clr-text-clicked);
+  margin-right: solid var();
+}
