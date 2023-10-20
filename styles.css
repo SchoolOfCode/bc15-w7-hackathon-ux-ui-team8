@@ -81,6 +81,12 @@ main {
   margin-block: 16px;
 }
 
+@media (min-width: 768px) {
+  main {
+    margin-block: 0px;
+  }
+}
+
 a {
   color: var(--clr-text);
 }
@@ -106,14 +112,12 @@ h3 {
   display: inline-block;
 }
 
-.yellow{
-  border-left: solid 5px var(--clr-nav)
+.yellow {
+  border-left: solid 5px var(--clr-nav);
 }
 
 /*Header styles */
 
-header {
-}
 /* Main Navigation styles*/
 
 .nav__main {
@@ -208,13 +212,13 @@ h1 {
 
 /* Mobile Navigation styles */
 
-@media (max-width: 35em) {
+@media (max-width: 75em) {
   .nav__links {
     position: fixed;
     inset: 0 0 0 0;
     background: black;
     flex-direction: column;
-    padding-inline: 0rem; 
+    padding-inline: 0rem;
     z-index: 1000;
     transform: translateY(-100%);
     transition: transform 350ms ease-out;
@@ -253,9 +257,8 @@ h1 {
     padding-block: 0.5rem;
   }
 
-  .nav__link{
+  .nav__link {
     padding-left: 0.5rem;
-    
   }
 }
 
@@ -276,10 +279,9 @@ h1 {
   line-height: 1.6;
 }
 
-.news__card a:active{
+.news__card a:active {
   animation: click-animation 2s;
   animation-fill-mode: forwards;
-
 }
 
 @keyframes click-animation {
@@ -295,7 +297,6 @@ h1 {
     text-decoration: none;
   }
 }
-
 
 .news__card:nth-child(1),
 .news__card:last-child {
@@ -354,6 +355,51 @@ h1 {
 
 .feed__list__images {
   width: 350px;
+}
+
+@media (min-width: 768px) {
+  .news__container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin: 0.5rem;
+  }
+
+  .news__card:nth-child(1),
+  .news__card:last-child {
+    grid-column: span 2;
+    grid-row: span 2;
+    margin-block-end: 0;
+  }
+
+  .news__card:nth-child(1) .news__card__sport,
+  .news__card:last-child .news__card__sport {
+    margin-block-start: 6rem;
+  }
+
+  .news__card:nth-child(3) {
+    margin-block-end: 0;
+  }
+
+  .news__card .news__card__imageContainer {
+    display: none;
+  }
+
+  .news__card {
+    grid-column: span 1;
+  }
+
+  .news__card__headline h3 {
+    font-size: 1.125rem;
+  }
+
+  .news__card__sport {
+    padding-bottom: 0.8rem;
+    padding-top: 0.5rem;
+  }
+
+  .news__card__headline h2 {
+    font-size: 1.8rem;
+  }
 }
 
 /* Live animation */
@@ -564,4 +610,3 @@ footer {
   padding-bottom: 1rem;
   margin-inline: 0.5rem;
 }
-
