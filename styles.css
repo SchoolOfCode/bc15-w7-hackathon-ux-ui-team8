@@ -276,6 +276,26 @@ h1 {
   line-height: 1.6;
 }
 
+.news__card a:active{
+  animation: click-animation 0.5s ;
+
+}
+
+@keyframes click-animation {
+  0% {
+    color: black;
+  }
+  50% {
+    color: var(--clr-sport-link);
+    text-decoration: underline;
+  }
+  100% {
+    color: var(--clr-text-clicked);
+    text-decoration: none;
+  }
+}
+
+
 .news__card:nth-child(1),
 .news__card:last-child {
   flex-direction: column;
@@ -543,3 +563,4 @@ footer {
   padding-bottom: 1rem;
   margin-inline: 0.5rem;
 }
+
