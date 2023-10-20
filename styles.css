@@ -94,6 +94,10 @@ h3 {
   font-family: bbc-font;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .grey {
   color: var(--clr-text-clicked);
 }
@@ -215,8 +219,10 @@ h1 {
 
 .news__card:nth-child(1) p, .news__card:last-child p {
  font-size: 14px;
+ color: var(--clr-text-clicked);
  margin-block-start: 0.5rem;
  margin-block-end: 1rem;
+
 }
 
 .news__card:nth-child(2),
@@ -263,10 +269,24 @@ h1 {
   width: 350px;
 }
 
+/* Live animation */
+
+.pulse {
+  animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+
 /*Social Links*/
 
 .socials {
   margin: 8px;
+  margin-block-end: 2rem;
 }
 
 .socials h2 {
@@ -276,11 +296,12 @@ h1 {
 .socials__container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1.5rem;
+  gap: 1rem;
   margin-inline-start: 0.25rem;
   margin-inline-end: 1.5rem;
   margin-block-start: 1.5rem;
-  margin-block-end: 1.5rem;
+  margin-block-end: 2rem;
+
 }
 
 .social a {
@@ -306,13 +327,12 @@ h1 {
 
 .socials__footer p {
   margin-block-end: 1rem;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .socials__footer a {
   margin-inline-end: 2rem;
-  padding-block-end: 2rem;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
