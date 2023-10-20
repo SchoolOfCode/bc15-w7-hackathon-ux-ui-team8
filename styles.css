@@ -277,7 +277,8 @@ h1 {
 }
 
 .news__card a:active{
-  animation: click-animation 0.5s ;
+  animation: click-animation 2s;
+  animation-fill-mode: forwards;
 
 }
 
